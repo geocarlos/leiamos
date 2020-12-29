@@ -1,0 +1,42 @@
+{
+    "zero": {
+        "en": {"text": "zero", "audio": "audio/numbers/en/zero.mp3"},
+        "pt": {"text": "zero", "audio": "audio/numbers/pt/zero.mp3"}
+    },
+    "one": {
+        "en": {"text": "one", "audio": "audio/numbers/en/one.mp3"},
+        "pt": {"text": "um", "audio": "audio/numbers/pt/um.mp3"}
+    },
+    "two": {
+        "en": {"text": "two", "audio": "audio/numbers/en/two.mp3"},
+        "pt": {"text": "dois", "audio": "audio/numbers/pt/dois.mp3"}
+    },
+    "three": {
+        "en": {"text": "three", "audio": "audio/numbers/en/three.mp3"},
+        "pt": {"text": "três", "audio": "audio/numbers/pt/tres.mp3"}
+    },
+    "four": {
+        "en": {"text": "four", "audio": "audio/numbers/en/four.mp3"},
+        "pt": {"text": "quatro", "audio": "audio/numbers/pt/quatro.mp3"}
+    },
+    "five": {
+        "en": {"text": "five", "audio": "audio/numbers/en/five.mp3"},
+        "pt": {"text": "cinco", "audio": "audio/numbers/pt/cinco.mp3"}
+    },
+    "six": {
+        "en": {"text": "six", "audio": "audio/numbers/en/six.mp3"},
+        "pt": {"text": "seis", "audio": "audio/numbers/pt/seis.mp3"}
+    },
+    "seven": {
+        "en": {"text": "seven", "audio": "audio/numbers/en/seven.mp3"},
+        "pt": {"text": "sete", "audio": "audio/numbers/pt/sete.mp3"}
+    },
+    "eight": {
+        "en": {"text": "eight", "audio": "audio/numbers/en/eight.mp3"},
+        "pt": {"text": "oito", "audio": "audio/numbers/pt/oito.mp3"}
+    },
+    "nine": {
+        "en": {"text": "nine", "audio": "audio/numbers/en/nine.mp3"},
+        "pt": {"text": "nove", "audio": "audio/numbers/pt/nove.mp3"}
+    }
+}
