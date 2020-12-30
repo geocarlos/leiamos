@@ -4,6 +4,8 @@ import numbers from '../assets/text/numbers.json';
 import LearningCard from './LearningCard';
 import OverlayImage from './OverlayImage';
 import bigThumImage from '../assets/images/thumbup.png';
+import greatImage from '../assets/images/otimismo.png';
+import sadFaceImage from '../assets/images/sad_face.png';
 
 const useStyles = makeStyles({
     learning: {
@@ -33,16 +35,29 @@ const useStyles = makeStyles({
     }
 });
 
+const fbImages = {
+    correct: [
+        bigThumImage,
+        greatImage
+    ],
+    wrong: [
+        sadFaceImage
+    ]
+}
+
 const Training = () => {
     const classes = useStyles();
     const [language, setLanguage] = React.useState<'en' | 'pt'>('en');
     const [points, setPoints] = React.useState(0);
     const [correctAnswer, setCorrectAnswer] = React.useState<number | null>(null);
+    const [showFeedback, setShowFeedback] = React.useState(false);
+    const [feebackImage, setFeebackImage] = React.useState<any>(null);
 
     const askNumber = () => {
         const index = Math.floor(Math.random() * 10);
         setCorrectAnswer(index);
         const audio = new Audio(require(`../assets/${Object.values(numbers)[index][language].audio}`).default);
+        setShowFeedback(false);
         audio.play();
     }
 
@@ -84,15 +99,19 @@ const Training = () => {
                                 if (i === correctAnswer) {
                                     setPoints(prev => prev + 1);
                                     setCorrectAnswer(null);
+                                    setShowFeedback(true);
+                                    setFeebackImage(fbImages.correct[Math.floor(Math.random() * fbImages.correct.length)]);
                                 } else if (correctAnswer) {
                                     setPoints(prev => prev - 1);
                                     setCorrectAnswer(null);
+                                    setShowFeedback(true);
+                                    setFeebackImage(fbImages.wrong[Math.floor(Math.random() * fbImages.wrong.length)]);
                                 }
                                 setTimeout(askNumber, 2000)
                             }} />
                 </React.Fragment>
             ))}
-            <OverlayImage image={bigThumImage} />
+            {showFeedback && <OverlayImage image={feebackImage} />}
         </div>
     )
 }
