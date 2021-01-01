@@ -1,6 +1,6 @@
 import { Button, makeStyles } from '@material-ui/core';
-import React from 'react';
-import numbers from '../assets/text/numbers.json';
+import React, { useEffect } from 'react';
+import numberData from '../assets/text/numbers.json';
 import LearningCard from './LearningCard';
 import OverlayImage from './OverlayImage';
 import bigThumImage from '../assets/images/thumbup.png';
@@ -52,11 +52,12 @@ const Training = () => {
     const [correctAnswer, setCorrectAnswer] = React.useState<number | null>(null);
     const [showFeedback, setShowFeedback] = React.useState(false);
     const [feebackImage, setFeebackImage] = React.useState<any>(null);
+    const numbers = numberData; // For some reason, getting it directly does not work in the built version.
 
     const askNumber = () => {
         const index = Math.floor(Math.random() * 10);
         setCorrectAnswer(index);
-        const audio = new Audio(require(`../assets/${Object.values(numbers)[index][language].audio}`).default);
+        const audio = new Audio(require(`../assets/${(Object.values(numbers) as any)[index][language].audio}`).default);
         setShowFeedback(false);
         audio.play();
     }
@@ -72,7 +73,7 @@ const Training = () => {
 
     const playCorrectAnswer = () => {
         if (typeof correctAnswer !== 'number') return;
-        const audio = new Audio(require(`../assets/${Object.values(numbers)[correctAnswer][language].audio}`).default);
+        const audio = new Audio(require(`../assets/${(Object.values(numbers) as any)[correctAnswer][language].audio}`).default);
         audio.play();
     }
 
@@ -88,7 +89,7 @@ const Training = () => {
                     <option value="pt">Português</option>
                 </select>
             </div>
-            {Object.entries(numbers).map(([key, value], i) => (
+            {(Object.entries(numbers) as Array<any>).map(([key, value], i) => (
                 <React.Fragment key={key}>
                     <LearningCard 
                         text={value[language].text} 
