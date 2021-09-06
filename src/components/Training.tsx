@@ -1,11 +1,11 @@
 import { Button, makeStyles } from '@material-ui/core';
-import React, { useEffect } from 'react';
-import numberData from '../assets/text/numbers.json';
+import React, { useContext } from 'react';
 import LearningCard from './LearningCard';
 import OverlayImage from './OverlayImage';
 import bigThumImage from '../assets/images/thumbup.png';
 import greatImage from '../assets/images/otimismo.png';
 import sadFaceImage from '../assets/images/sad_face.png';
+import { Context } from './ContextProvider';
 
 const useStyles = makeStyles({
     learning: {
@@ -52,12 +52,15 @@ const Training = () => {
     const [correctAnswer, setCorrectAnswer] = React.useState<number | null>(null);
     const [showFeedback, setShowFeedback] = React.useState(false);
     const [feebackImage, setFeebackImage] = React.useState<any>(null);
-    const numbers = numberData; // For some reason, getting it directly does not work in the built version.
+    // const numbers = numberData; // For some reason, getting it directly does not work in the built version.
+    const {content} = useContext(Context);
+
+    const _content = content as any;
 
     const askNumber = () => {
-        const index = Math.floor(Math.random() * 10);
+        const index = Math.floor(Math.random() * Object.keys(_content).length);
         setCorrectAnswer(index);
-        const audio = new Audio(require(`../assets/${(Object.values(numbers) as any)[index][language].audio}`).default);
+        const audio = new Audio(require(`../assets/${(Object.values(_content) as any)[index][language].audio}`).default);
         setShowFeedback(false);
         audio.play();
     }
@@ -72,8 +75,8 @@ const Training = () => {
     }
 
     const playCorrectAnswer = () => {
-        if (typeof correctAnswer !== 'number') return;
-        const audio = new Audio(require(`../assets/${(Object.values(numbers) as any)[correctAnswer][language].audio}`).default);
+        if (!correctAnswer) return;
+        const audio = new Audio(require(`../assets/${(Object.values(_content) as any)[correctAnswer][language].audio}`).default);
         audio.play();
     }
 
@@ -89,12 +92,11 @@ const Training = () => {
                     <option value="pt">Português</option>
                 </select>
             </div>
-            {(Object.entries(numbers) as Array<any>).map(([key, value], i) => (
+            {(Object.entries(_content) as Array<any>).map(([key, value], i) => (
                 <React.Fragment key={key}>
                     <LearningCard 
                         text={value[language].text} 
                         audio={value[language].audio} 
-                        type={'numbers'} 
                         index={i}
                         trackEvent={(i: number) => {
                                 if (i === correctAnswer) {

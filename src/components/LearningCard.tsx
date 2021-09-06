@@ -1,5 +1,6 @@
 import { Card, makeStyles } from '@material-ui/core';
-import React from 'react';
+import React, { useContext } from 'react';
+import { Context } from './ContextProvider';
 
 const useStyles = makeStyles({
     learningCard: {
@@ -23,7 +24,6 @@ const useStyles = makeStyles({
 type LearningData = {
     text: string,
     audio: string,
-    type: string,
     index?: number,
     trackEvent?: (index: number) => void
 }
@@ -31,6 +31,8 @@ type LearningData = {
 const LearningCard = (data: LearningData) => {
     const classes = useStyles();
     const [audio, setAudio] = React.useState<HTMLAudioElement | null>(null);
+    const {contentType} = useContext(Context);
+
     React.useEffect(() => {
         const path = require(`../assets/${data.audio}`);
         setAudio(new Audio(path.default));
@@ -49,7 +51,7 @@ const LearningCard = (data: LearningData) => {
         <Card className={classes.learningCard} style={{
             color: `rgb(${Math.random() * 200}, ${Math.random() * 180}, ${Math.random() * 220})` 
         }} onClick={handleClick}>
-            <h1>{data.index}</h1>
+            <h1>{contentType === 'numbers' ? data.index : data.text.toUpperCase()}</h1>
             <h1 style={{width: '100%'}}>{data.text}</h1>
         </Card>
     )

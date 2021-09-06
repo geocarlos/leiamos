@@ -38,5 +38,49 @@
     "nine": {
         "en": {"text": "nine", "audio": "audio/numbers/en/nine.mp3"},
         "pt": {"text": "nove", "audio": "audio/numbers/pt/nove.mp3"}
+    },
+    "ten": {
+        "en": {"text": "ten", "audio": "audio/numbers/en/ten.mp3"},
+        "pt": {"text": "dez", "audio": "audio/numbers/en/ten.mp3"}
+    },
+    "eleven": {
+        "en": {"text": "eleven", "audio": "audio/numbers/en/eleven.mp3"},
+        "pt": {"text": "onze", "audio": "audio/numbers/en/eleven.mp3"}
+    },
+    "twelve": {
+        "en": {"text": "twelve", "audio": "audio/numbers/en/twelve.mp3"},
+        "pt": {"text": "doze", "audio": "audio/numbers/en/twelve.mp3"}
+    },
+    "thirteen": {
+        "en": {"text": "thirteen", "audio": "audio/numbers/en/thirteen.mp3"},
+        "pt": {"text": "treze", "audio": "audio/numbers/en/thirteen.mp3"}
+    },
+    "fourteen": {
+        "en": {"text": "fourteen", "audio": "audio/numbers/en/fourteen.mp3"},
+        "pt": {"text": "quatorze", "audio": "audio/numbers/en/fourteen.mp3"}
+    },
+    "fifteen": {
+        "en": {"text": "fifteen", "audio": "audio/numbers/en/fifteen.mp3"},
+        "pt": {"text": "quinze", "audio": "audio/numbers/en/fifteen.mp3"}
+    },
+    "sixteen": {
+        "en": {"text": "sixteen", "audio": "audio/numbers/en/sixteen.mp3"},
+        "pt": {"text": "dezesseis", "audio": "audio/numbers/en/sixteen.mp3"}
+    },
+    "seventeen": {
+        "en": {"text": "seventeen", "audio": "audio/numbers/en/seventeen.mp3"},
+        "pt": {"text": "dezessete", "audio": "audio/numbers/en/seventeen.mp3"}
+    },
+    "eighteen": {
+        "en": {"text": "eighteen", "audio": "audio/numbers/en/eighteen.mp3"},
+        "pt": {"text": "dezoito", "audio": "audio/numbers/en/eighteen.mp3"}
+    },
+    "nineteen": {
+        "en": {"text": "nineteen", "audio": "audio/numbers/en/nineteen.mp3"},
+        "pt": {"text": "dezenove", "audio": "audio/numbers/en/nineteen.mp3"}
+    },
+    "twenty": {
+        "en": {"text": "twenty", "audio": "audio/numbers/en/twenty.mp3"},
+        "pt": {"text": "vinte", "audio": "audio/numbers/en/twenty.mp3"}
     }
 }

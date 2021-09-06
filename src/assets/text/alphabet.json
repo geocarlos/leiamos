@@ -1,0 +1,262 @@
+{
+    "a": {
+        "en": {
+            "text": "a",
+            "audio": "audio/alphabet/en/a.mp3"
+        },
+        "pt": {
+            "text": "a",
+            "audio": "audio/alphabet/pt/a.mp3"
+        }
+    },
+    "b": {
+        "en": {
+            "text": "b",
+            "audio": "audio/alphabet/en/b.mp3"
+        },
+        "pt": {
+            "text": "b",
+            "audio": "audio/alphabet/pt/b.mp3"
+        }
+    },
+    "c": {
+        "en": {
+            "text": "c",
+            "audio": "audio/alphabet/en/c.mp3"
+        },
+        "pt": {
+            "text": "c",
+            "audio": "audio/alphabet/pt/c.mp3"
+        }
+    },
+    "d": {
+        "en": {
+            "text": "d",
+            "audio": "audio/alphabet/en/d.mp3"
+        },
+        "pt": {
+            "text": "d",
+            "audio": "audio/alphabet/pt/d.mp3"
+        }
+    },
+    "e": {
+        "en": {
+            "text": "e",
+            "audio": "audio/alphabet/en/e.mp3"
+        },
+        "pt": {
+            "text": "e",
+            "audio": "audio/alphabet/pt/e.mp3"
+        }
+    },
+    "f": {
+        "en": {
+            "text": "f",
+            "audio": "audio/alphabet/en/f.mp3"
+        },
+        "pt": {
+            "text": "f",
+            "audio": "audio/alphabet/pt/f.mp3"
+        }
+    },
+    "g": {
+        "en": {
+            "text": "g",
+            "audio": "audio/alphabet/en/g.mp3"
+        },
+        "pt": {
+            "text": "g",
+            "audio": "audio/alphabet/pt/g.mp3"
+        }
+    },
+    "h": {
+        "en": {
+            "text": "h",
+            "audio": "audio/alphabet/en/h.mp3"
+        },
+        "pt": {
+            "text": "h",
+            "audio": "audio/alphabet/pt/h.mp3"
+        }
+    },
+    "i": {
+        "en": {
+            "text": "i",
+            "audio": "audio/alphabet/en/i.mp3"
+        },
+        "pt": {
+            "text": "i",
+            "audio": "audio/alphabet/pt/i.mp3"
+        }
+    },
+    "j": {
+        "en": {
+            "text": "j",
+            "audio": "audio/alphabet/en/j.mp3"
+        },
+        "pt": {
+            "text": "j",
+            "audio": "audio/alphabet/pt/j.mp3"
+        }
+    },
+    "k": {
+        "en": {
+            "text": "k",
+            "audio": "audio/alphabet/en/k.mp3"
+        },
+        "pt": {
+            "text": "k",
+            "audio": "audio/alphabet/pt/k.mp3"
+        }
+    },
+    "l": {
+        "en": {
+            "text": "l",
+            "audio": "audio/alphabet/en/l.mp3"
+        },
+        "pt": {
+            "text": "l",
+            "audio": "audio/alphabet/pt/l.mp3"
+        }
+    },
+    "m": {
+        "en": {
+            "text": "m",
+            "audio": "audio/alphabet/en/m.mp3"
+        },
+        "pt": {
+            "text": "m",
+            "audio": "audio/alphabet/pt/m.mp3"
+        }
+    },
+    "n": {
+        "en": {
+            "text": "n",
+            "audio": "audio/alphabet/en/n.mp3"
+        },
+        "pt": {
+            "text": "n",
+            "audio": "audio/alphabet/pt/n.mp3"
+        }
+    },
+    "o": {
+        "en": {
+            "text": "o",
+            "audio": "audio/alphabet/en/o.mp3"
+        },
+        "pt": {
+            "text": "o",
+            "audio": "audio/alphabet/pt/o.mp3"
+        }
+    },
+    "p": {
+        "en": {
+            "text": "p",
+            "audio": "audio/alphabet/en/p.mp3"
+        },
+        "pt": {
+            "text": "p",
+            "audio": "audio/alphabet/pt/p.mp3"
+        }
+    },
+    "q": {
+        "en": {
+            "text": "q",
+            "audio": "audio/alphabet/en/q.mp3"
+        },
+        "pt": {
+            "text": "q",
+            "audio": "audio/alphabet/pt/q.mp3"
+        }
+    },
+    "r": {
+        "en": {
+            "text": "r",
+            "audio": "audio/alphabet/en/r.mp3"
+        },
+        "pt": {
+            "text": "r",
+            "audio": "audio/alphabet/pt/r.mp3"
+        }
+    },
+    "s": {
+        "en": {
+            "text": "s",
+            "audio": "audio/alphabet/en/s.mp3"
+        },
+        "pt": {
+            "text": "s",
+            "audio": "audio/alphabet/pt/s.mp3"
+        }
+    },
+    "t": {
+        "en": {
+            "text": "t",
+            "audio": "audio/alphabet/en/t.mp3"
+        },
+        "pt": {
+            "text": "t",
+            "audio": "audio/alphabet/pt/t.mp3"
+        }
+    },
+    "u": {
+        "en": {
+            "text": "u",
+            "audio": "audio/alphabet/en/u.mp3"
+        },
+        "pt": {
+            "text": "u",
+            "audio": "audio/alphabet/pt/u.mp3"
+        }
+    },
+    "v": {
+        "en": {
+            "text": "v",
+            "audio": "audio/alphabet/en/v.mp3"
+        },
+        "pt": {
+            "text": "v",
+            "audio": "audio/alphabet/pt/v.mp3"
+        }
+    },
+    "w": {
+        "en": {
+            "text": "w",
+            "audio": "audio/alphabet/en/w.mp3"
+        },
+        "pt": {
+            "text": "w",
+            "audio": "audio/alphabet/pt/w.mp3"
+        }
+    },
+    "x": {
+        "en": {
+            "text": "x",
+            "audio": "audio/alphabet/en/x.mp3"
+        },
+        "pt": {
+            "text": "x",
+            "audio": "audio/alphabet/pt/x.mp3"
+        }
+    },
+    "y": {
+        "en": {
+            "text": "y",
+            "audio": "audio/alphabet/en/y.mp3"
+        },
+        "pt": {
+            "text": "y",
+            "audio": "audio/alphabet/pt/y.mp3"
+        }
+    },
+    "z": {
+        "en": {
+            "text": "z",
+            "audio": "audio/alphabet/en/z.mp3"
+        },
+        "pt": {
+            "text": "z",
+            "audio": "audio/alphabet/pt/z.mp3"
+        }
+    }
+}

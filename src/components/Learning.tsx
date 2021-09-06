@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
-import React from 'react';
-import numbers from '../assets/text/numbers.json';
+import React, { useContext } from 'react';
+import { Context } from './ContextProvider';
 import LearningCard from './LearningCard';
 
 const useStyles = makeStyles({
@@ -34,7 +34,11 @@ const useStyles = makeStyles({
 const Learning = () => {
     const classes = useStyles();
     const [language, setLanguage] = React.useState<'en' | 'pt'>('en');
-    return (
+    const {content} = useContext(Context);
+
+    const _content = content as any;
+
+    return _content ? (
         <div className={classes.learning}>
             <div style={{width: '100%', display: 'flex', justifyContent: 'flex-end', padding: '.4rem'}}>
                 <select className={classes.select} value={language} onChange={e => setLanguage(e.target.value as 'en' | 'pt')}>
@@ -42,13 +46,13 @@ const Learning = () => {
                     <option value="pt">Português</option>
                 </select>
             </div>
-            {Object.entries(numbers).map(([key, value], i) => (
+            {Object.entries(_content).map(([key, value]: any, i) => (
                 <React.Fragment key={key}>
-                    <LearningCard text={value[language].text} audio={value[language].audio} type={'numbers'} index={i} />
+                    <LearningCard text={value[language].text} audio={value[language].audio} index={i} />
                 </React.Fragment>
             ))}
         </div>
-    )
+    ) : null;
 }
 
 export default Learning;
