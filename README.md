@@ -8,9 +8,9 @@ Tasks Done:
 
 - Learn and Practice numbers from 0 to 9 in English and Portuguese.
 
-Tasks To Do:
-
 - Learn the alphabet in English and in Portuguese.
+
+Tasks To Do:
 
 - Learn everyday words in English and in Portuguese.
 
